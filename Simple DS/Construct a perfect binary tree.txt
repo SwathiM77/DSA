@@ -1,0 +1,28 @@
+Problem Description:
+
+Given an integer representing the depth of a binary tree, create a perfect binary tree with given depth and return the root. The value of nodes should be equal to the depth of that node. Print the inorder traversal of the formed tree from the root.
+A Binary tree is a Perfect Binary Tree if all the internal nodes have two children and all leaf nodes are at the same level.
+Note that input and output are being handled by a main() method behind the scenes, so you do NOT have to implement the main() method or any I/O here. The inputs are sent as arguments to the function you have to implement.
+You’d have to implement the function defined in the stub, use the arguments, and return the answer based on the return type of the function.
+The structure of the tree is given as a reference for you while writing the code. Do not make any modifications to it, or any of the rest of the stub, or the tests would fail.
+
+Input format:
+First line contains an integer depth - The depth of the perfect binary tree.
+
+Output format
+Return the root.
+
+Sample Input 1
+2
+
+Sample Output 1
+2 1 2 0 2 1 2
+
+Explanation 1
+Perfect binary tree with depth 2 can be constructed as:
+         0
+      1     1
+    2  2  2  2
+
+Constraints
+1 <= depth <= 16

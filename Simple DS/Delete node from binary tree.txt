@@ -1,0 +1,42 @@
+Problem Description:
+
+Given a binary tree, you have to delete all the leaf nodes of that tree and return the root.
+Print the inorder of the binary tree thus formed.
+Note that input and output are being handled by a main() method behind the scenes, so you do NOT have to implement the main() method or any I/O here. The inputs are sent as arguments to the function you have to implement.
+You’d have to implement the function defined in the stub, use the arguments, and return the answer based on the return type of the function.
+The structure of the tree is given as a reference for you while writing the code. Do not make any modifications to it, or any of the rest of the stub, or the tests would fail
+
+Input format:
+
+There are n+2 lines of input.
+First line contains an integer n - Number of nodes.
+Second line contains n space separated integers - The value of nodes.
+Next n lines contain 3 space separated integers i, l, r describing left and right child of ith node as l and r respectively.
+
+Output format:
+Print the inorder traversal of the tree.
+
+Sample Input 1
+4
+6 4 3 5
+1 2 3
+2 4 -1
+3 -1 -1
+4 -1 -1
+
+Sample Output 1
+4 6
+
+Explanation 1
+Tree before deletion:
+      6
+    4   3
+  5
+
+Tree after deletion:
+      6
+    4
+
+Constraints:
+0 < n < 100000
+0 < Value of nodes <= 10000

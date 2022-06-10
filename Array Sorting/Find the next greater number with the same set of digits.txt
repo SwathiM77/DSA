@@ -1,0 +1,20 @@
+Problem Description:
+Given a positive integer n, find the smallest integer which has exactly the same digits existing in the integer n and is greater in value than n. If no such positive integer exists, return -1.
+
+Input format:
+A 32 bit integer N
+
+Output format
+A single integer
+
+Sample Input 1
+12
+
+Sample Output 1
+21
+
+Explanation
+There is only one number greater than 12 which is composed of 2 and 1 and it is 21.
+
+Constraints
+0<= N <= 10^9

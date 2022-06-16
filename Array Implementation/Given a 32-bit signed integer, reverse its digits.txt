@@ -1,0 +1,35 @@
+Problem Description:
+Given a 32-bit signed integer N, reverse the digits of this integer.
+
+Input format:
+Single line containing a 32 bit signed integer N
+
+Output format:
+Single line containing a 32 bit signed integer denoting the reverse of N
+
+Sample Input 1
+123
+
+Sample Output 1
+321
+
+Explanation 1
+The digits have been reversed
+
+Sample Input 2
+-123
+
+Sample Output 2
+-321
+
+Sample Input 3
+120
+
+Sample Output 3
+21
+
+Constraints
+-2^31 <= N <= 2^31-1
+
+Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−2^31, 2^31 − 1].
+For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.

@@ -16,19 +16,20 @@ ListNode* deleteKthToLast(ListNode* head , int k) {
     ListNode* slow = head;
     ListNode* fast = head;
     for(int i=0;i<k;i++){
-        if(slow->next == NULL){
+        if(fast->next == NULL){
             if(i == k-1){
                 head = head->next;
             }
             return head;
         }
-        if(slow->next)
-        slow = slow->next;
+        if(fast->next)
+        fast = fast->next;
     }
-    while(slow && slow->next){
+    while(fast && fast->next){
         slow = slow->next;
         fast = fast->next;
     }
-    fast->next = fast->next->next;
+    //slow reaches the nth node from end
+    slow->next = slow->next->next;
     return head;
 }

@@ -46,3 +46,26 @@ public:
         return right;
     }
 };
+
+
+/*
+
+class CommonAncestor {
+public:
+    TreeNode* commonAncestor(TreeNode* root, TreeNode * p , TreeNode* q) {
+        if(!root || !p || !q)
+            return NULL;
+
+        if(root->val == p->val || root->val == q->val)
+            return root;
+
+        TreeNode* left = commonAncestor(root->left,p,q);
+        TreeNode* right = commonAncestor(root->right,p,q);
+
+        if(left && right)
+            return root;
+        
+        return left?left:right;
+    }
+};
+*/

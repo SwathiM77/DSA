@@ -1,11 +1,10 @@
-Problem Description
+Problem Description:
 Given a binary search tree, write a function to find the node with the kth smallest value in it and return its value.
 
 Note: You may assume that k is always valid, 1 ≤ k ≤ BST's total elements.
 
-Input format
+Input format:
 Line1 to X: Details of the binary tree structure (refer section below for the format)
-
 Last line contains a single integer k.
 
 Output format
@@ -29,24 +28,22 @@ Sample Output 1
 1
 
 Explanation 1
-image
-
+       3
+    1     4
+      2
+      
 1 is the 1st smallest element in this BST
 
 Instructions to create custom input for a Binary Tree
 In order to specify a binary tree that can be used as custom input to the problem, you’ll need to follow this convention.
 
 Line 1: Number of nodes in the Binary Tree (N)
-
 Line 2: N space separated node values. The position of the Nodes on this line will be used to refer to them in the below lines, starting from 1.
-
 Line 3 to N+2: Lines specifying the child nodes for each of the N nodes
 
 Format of each line (space separated): Parent_node Left_child_node Right_child_node
 
 Parent_node - Node at this Position on Line 2 is the Node to which we are assigning the Left and Right child here
-
 Left_child_node - Node at this position on Line 2 is the left child. Specify -1 if there is no Left child.
-
 Right_child_node - Node at this position on Line 2 is the right child. Specify -1 if there is no Right child.
 
